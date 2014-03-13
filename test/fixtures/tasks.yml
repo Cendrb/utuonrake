@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: Penis
+  description: Mária je úplně blbá
+  subject: VV
+  date: 2014-03-06
+  group: 0
+
+two:
+  title: Rototo
+  description: Psim?
+  subject: TV
+  date: 2015-04-30
+  group: 2

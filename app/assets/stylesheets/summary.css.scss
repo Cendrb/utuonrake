@@ -1,0 +1,33 @@
+// Place all the styles related to the summary controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+h1
+{
+  padding-bottom: 0.3em;
+}
+
+h2
+{
+  padding-bottom: 0.4em;
+}
+
+h3
+{
+  padding-top: 0.2em;
+}
+
+.line_between_details
+{
+  
+}
+
+.details_block 
+{
+  width: 32%;
+  /* kvůli dlouhým slovů - standardně nedělitelné */
+  word-wrap: break-word;
+  float: none;
+  display: inline-block;
+  margin-left: 1%;
+  margin-bottom: 1%;
+}

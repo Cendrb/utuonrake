@@ -1,0 +1,92 @@
+<h1>Podrobný přehled</h1>
+
+<div id="details">
+    <div class="details_block">
+        <h2>Události</h2>
+        <% @events.each do |e| %>
+
+        <h3><%= e.title %></h3>
+        <p>
+            <%= sanitize(e.description) %>
+        </p>
+
+        <p>
+            <strong>Místo: </strong>
+            <%= e.location %>
+        </p>
+
+        <p>
+            <strong>Začátek události: </strong>
+            <%= e.start %>
+        </p>
+
+        <p>
+            <strong>Konec události: </strong>
+            <%= e.end %>
+        </p>
+        <hr class="line_between_details" />
+        <% end %>
+    </div>
+
+    <div class="details_block">
+        <h2>Úkoly</h2>
+        <% @tasks.each do |e| %>
+
+        <h3><%= e.title %></h3>
+        <p>
+            <%= sanitize(e.description) %>
+        </p>
+
+        <p>
+            <strong>Předmět: </strong>
+            <%= e.subject %>
+        </p>
+
+        <p>
+            <strong>Datum: </strong>
+            <%= e.date %>
+        </p>
+
+        <p>
+            <strong>Skupina: </strong>
+            <% if e.group == 0 %>
+            obě skupiny
+            <% else %>
+            <%= e.group %>.
+            <% end %>
+        </p>
+        <hr class="line_between_details" />
+        <% end %>
+    </div>
+
+    <div class="details_block">
+        <h2>Testy</h2>
+        <% @exams.each do |e| %>
+
+        <h3><%= e.title %></h3>
+        <p>
+            <%= sanitize(e.description) %>
+        </p>
+
+        <p>
+            <strong>Předmět: </strong>
+            <%= e.subject %>
+        </p>
+
+        <p>
+            <strong>Datum: </strong>
+            <%= e.date %>
+        </p>
+
+        <p>
+            <strong>Skupina: </strong>
+            <% if e.group == 0 %>
+            obě skupiny
+            <% else %>
+            <%= e.group %>.
+            <% end %>
+        </p>
+        <hr class="line_between_details"/>
+        <% end %>
+    </div>
+</div>

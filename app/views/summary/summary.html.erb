@@ -1,0 +1,21 @@
+<h1>Vše je dočasné, ale už se to pomalu rýsuje :)</h1>
+<p>položky v menu (události, úkoly a testy) budou později odstraněny a přístupné pouze z administrace (speciální účet)</p>
+<div id="events">
+	<h2>Události</h2>
+	<% @events.each do |event| %>
+	<div class="line_item">
+		<h3><%= event.title %></h3>
+		<%= sanitize(event.description) %>
+		<br />
+		<%= event.location %> 
+	</div>
+	<% end %>
+</div>
+
+<div id="tasks">
+	
+</div>
+
+<div id="exams">
+	
+</div>
